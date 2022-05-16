@@ -1,0 +1,21 @@
+<html>
+    <script>
+        function custom(url){
+            return new Promise((resolve,reject) =>{
+                let request = new XMLHttpRequest;
+                request.open('GET',url);
+                request.send();
+                request.onload = function(){
+                    let json = JSON.parse(request.responseText);
+                    resolve(json);
+                };
+                request.onerror = function(error){
+                    reject(error);
+                }
+            })
+        }
+        let url1 = "https://jsonplaceholder.typicode.com/todos/1";
+
+        custom(url).then(data=>console.log(data),error=>console.log(error));
+    </script>
+</html>

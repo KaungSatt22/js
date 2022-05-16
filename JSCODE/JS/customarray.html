@@ -1,0 +1,15 @@
+<html>
+    <script>
+        class Custom extends Array {
+            get first(){
+                return this[0];
+            }
+            get last(){
+                return this[this.length-1];
+            }
+        }
+        let arr = new Custom(1,2,3,4,5,6,0);
+        console.log(arr.first)
+        console.log(arr.last)
+    </script>
+</html>

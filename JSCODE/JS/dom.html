@@ -1,0 +1,51 @@
+<html>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+        table {
+            margin-top: 40px;
+            width: 200px;
+            height: 200px;
+        }
+        tr > td {
+            border: 1px solid royalblue;
+        }
+    </style>
+    <body>
+        <button class="container" type="button">Click</button>
+        <table id="table">
+            <tr>
+                <td>One</td>
+            </tr>
+            <tr>
+                <td>Two</td>
+            </tr>
+            <tr>
+                <td>Three</td>
+            </tr>
+        </table>
+    </body>
+    <script>
+        let container = document.querySelector(".container")
+        container.addEventListener("click",() =>{
+            console.log("container click", "Target", event.target , "Current" , event.currentTarget)
+            //event.stopPropagation();
+        },{
+            //capture : true
+            //passive : false
+        })
+        document.addEventListener("click",()=>{
+            console.log("body click")
+        },{
+            //capture :true
+            //passive : false
+        })
+        document.querySelector("table").addEventListener("click",()=>{
+            console.log("click row",event.target)
+        })
+
+    </script>
+</html>

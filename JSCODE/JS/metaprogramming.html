@@ -1,0 +1,26 @@
+<html>
+    <script>
+        let obj = {
+            f1 : function(){
+                console.log("fun1")
+            },
+            f2 : function(){
+                console.log("fun2")
+            }
+        }
+        function inject(obj){
+            for(const [key,value] of Object.entries(obj)){
+                if (typeof value === "function") {
+                    let original = obj[key];
+                    obj[key] = function(){
+                        console.log(`Debug ${key}`)
+                        original()
+                    }
+                }
+            }
+        }
+        inject(obj)
+        obj.f1()
+        obj.f2()
+    </script>
+</html>

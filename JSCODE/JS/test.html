@@ -1,0 +1,16 @@
+<html>
+    <script>
+        let cities = ["YGN","MDN"]
+        let dbPromise = indexedDB.open("test",1)
+        dbPromise.onsuccess = ()=>{
+            let db = dbPromise.result
+        }
+        dbPromise.onupgradeneeded = ()=>{
+            let db = dbPromise.result
+            let store = db.createObjectStore("cities",{cities});
+            store.createIndex("cities", "city");
+            console.log(dbPromise)
+        }
+        
+    </script>
+</html>

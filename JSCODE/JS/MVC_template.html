@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <div id="container"></div>
+    </body>
+    <script>
+        function render(modal){
+            let template = `<div> 
+                                <h1> Name : ${modal.name} </h1>
+                                <h1> Age : ${modal.age} </h1>
+                            </div>`;
+            document.getElementById("container").innerHTML = template;
+        }
+        function framework(modal){
+            for(const [key,value] of Object.entries(modal)){
+                if(typeof value !== "function"){
+                    modal[`_${key}`] = modal[key];
+                    Object.defineProperty(modal,key,{
+                        set(newValue){
+                            modal[`_${key}`] = newValue;
+                            render(modal);
+                        },
+                        get(){
+                            return modal[`_${key}`]; 
+                        }
+                    })
+                }
+            }
+            return modal;
+        }
+        let modal = {
+            name : "K",
+            age : 21
+        }
+        modal = framework(modal)
+        
+        render(modal)
+    </script>
+</html>

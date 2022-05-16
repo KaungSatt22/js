@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <button type="button" id="btn">Click</button>
+    </body>
+    <script>
+        document.querySelector("#btn").addEventListener("click",() => lazy("another.js"));
+        function lazy(url)
+        {
+            let load = document.createElement("script");
+            load.src = url;
+            document.head.append(load);
+        }
+    </script>
+</html>

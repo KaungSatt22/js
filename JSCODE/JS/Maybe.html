@@ -1,0 +1,24 @@
+<html>
+    <script>
+        function Maybe(value){
+            return {
+                isNothing : function(){
+                    return (value === undefined) || (value === null)
+                },
+                map : function(fun){
+                    return this.isNothing() ? Maybe(value) : Maybe(fun(value))
+                },
+                identity :function(value){
+                    return Maybe(value)
+                },
+                valueOf (){
+                    return value
+                }
+            }
+        }
+        const toupper = str => str.toUpperCase()
+        const appendHi = str => str + " n00b"
+        const funtor = Maybe(undefined).map(toupper).map(appendHi).valueOf()
+        console.log(funtor)
+    </script>
+</html>

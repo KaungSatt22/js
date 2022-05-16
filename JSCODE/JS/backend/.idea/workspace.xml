@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bcbe1ca7-393b-4ebb-8af5-7d716eadf4a3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26gDvvdF2HAQODOKUsrvsmhY2jS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="GitIgnore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcbe1ca7-393b-4ebb-8af5-7d716eadf4a3" name="Changes" comment="" />
+      <created>1647836571790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647836571790</updated>
+      <workItem from="1647836572976" duration="5813000" />
+      <workItem from="1647923441844" duration="1208000" />
+      <workItem from="1647924737600" duration="39000" />
+      <workItem from="1647924782244" duration="4235000" />
+      <workItem from="1647931671882" duration="1492000" />
+      <workItem from="1648044422212" duration="16000" />
+      <workItem from="1648135304930" duration="86000" />
+      <workItem from="1648136187930" duration="8000" />
+      <workItem from="1648136866840" duration="715000" />
+      <workItem from="1648181209985" duration="2498000" />
+      <workItem from="1648184583336" duration="786000" />
+      <workItem from="1648214942106" duration="5798000" />
+      <workItem from="1648267809263" duration="2302000" />
+      <workItem from="1648277369631" duration="4297000" />
+      <workItem from="1648357928378" duration="1714000" />
+      <workItem from="1648442333955" duration="18000" />
+      <workItem from="1651380511311" duration="2002000" />
+      <workItem from="1651387213581" duration="3687000" />
+      <workItem from="1651463496562" duration="199000" />
+      <workItem from="1651463773032" duration="2289000" />
+      <workItem from="1651474439968" duration="2428000" />
+      <workItem from="1651728726818" duration="34000" />
+      <workItem from="1652714892862" duration="280000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
